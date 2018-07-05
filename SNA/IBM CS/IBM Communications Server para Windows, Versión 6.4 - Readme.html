@@ -1,0 +1,834 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+   <title>IBM Communications Server para Windows, Versión 6.4 - Readme</title>
+</head>
+<body text="#000000" bgcolor="#ffffff" link="#3333ff" vlink="#3333ff" alink="#3333ff">
+
+<a name="TOP"></a>
+<h2 align="center">
+<b>IBM Communications Server para Windows
+<br>Versión 6.4
+<br>Archivo Readme</b>
+</h2>
+
+<a name="Copyright"></a>
+<hr>
+
+© Copyright International Business Machines Corp. 2009
+<br>Reservados todos los derechos
+<br>Material bajo licencia - Propiedad de IBM
+<br>Derechos restringidos a los usuarios del Gobierno de los EE.UU. - La utilización, duplicación o
+<br>divulgación están restringidas por el GSA ADP Schedule Contract con IBM Corp.
+
+<a name="ToC"></a>
+<hr>
+
+<dl>
+<dt><b>Tabla de contenido</b>
+<dt><font size = +2><A href="#1"><b>1</b></font>
+  Acerca de este release</A>
+    <dd>Novedades de este release, historial de arreglos, compatibilidad
+<dt><font size = +2><A href="#2"><b>2</b></font>
+  Información de instalación</A>
+    <dd>Requisitos de hardware y software, instalación
+<dt><font size = +2><A href="#3"><b>3</b></font>
+  Información de desinstalación</A>
+<dt><font size = +2><A href="#4"><b>4</b></font> Información del sitio Web</A>
+<dt><font size = +2><A href="#5"><b>5</b></font>
+  Información del release</A>
+    <dd>Características y posibilidades para la versión 6.4 de IBM Communications Server, el cliente API SNA y el cliente de administración remota
+<dt><font size = +2><A href="#6"><b>6</b></font>
+  Limitaciones</A>
+<dt><font size = +2><A href="#7"><b>7</b></font> Avisos y marcas registradas</A></dt>
+</dl>
+
+<p><!-- SECTION 1 ------------------------------------------------ -->
+<a name="1"></a>
+<hr>
+
+<b><font size =+2>1</font> Acerca de este release</b>
+<p>
+<dl>
+  <dd>Communications Server para Windows proporciona conectividad SNA para sistemas Windows,
+lo cual permite la conexión a IBM z/OS Communications Server y a otras
+implementaciones SNA que dan soporte a conexiones
+LLC2, SDLC, X.25 y Enterprise Extender.  Communications Server para Windows
+también proporciona una interfaz de adaptador abierta para adaptadores OEM.
+<p>IBM Communications Server para Windows Versión 6.4 es una versión actualizada de la
+  versión 6.1.3 que proporciona una nueva funcionalidad de ARB progresivo,
+  Retardo de conmutador de vía de acceso, soporte IPv6 para TN3270E, cliente API SNA y soporte Java para  CPI-C de Java 1.6. También proporciona las últimas actualizaciones de mantenimiento de las versiones 6.1.2 y
+  6.1.3. La versión 6.4 es una instalación completa, y si ya hay
+  instalada una versión anterior inferior a 6.1.3, debe desinstalarse la versión anterior antes de instalar   la versión 6.4. <p>Este documento contiene información suplementaria a la ayuda en
+línea y las publicaciones. Describe las nuevas funciones añadidas, restricciones y correcciones, y
+ofrece consejos y sugerencias.
+<p>Muchas gracias por elegir IBM Communications Server.
+
+<p>[<A href="#TOP" >Volver al principio</A>] [<A href="#ToC" >Tabla de contenido</A>]
+</P></DD>
+</dl><!-- SECTION 1.1 ---------------------------------------------- --><a
+name=1.1></A>
+<hr>
+<b><font size=+2>1.1</FONT> Novedades de este release</B>
+<p>
+<dl>
+  <dd>IBM Communications Server para Windows Versión 6.4 proporciona soporte para las nuevas características de <br>
+<ul>
+  <li>Soporte de ARB progresivo</li>
+  <li>Retardo de conmutador de vía de acceso</li>
+  <li>Soporte IPv6 para TN3270E</li>
+  <li>Cliente API SNA</li>
+  <li>Soporte Java para CPI-C para Java 1.6</li>
+</ul>
+  <p>[<A href="#TOP" >Volver al principio</A>] [<A href="#ToC" >Tabla de contenido</A>]
+</P></DD></DL><!-- SECTION 1.2 ---------------------------------------------- --><a
+name=1.2></A>
+<hr>
+<b><font size=+2>1.2</FONT> Historial de arreglos del producto</B>
+<p>
+<dl>
+  <dd>
+  <p>Consulte los sitios web listados en la <A href="#4" >sección 4</A> para ver la información más
+reciente sobre este producto.
+
+<p>[<A href="#TOP" >Volver al principio</A>] [<A href="#ToC" >Tabla de contenido</A>]
+</P></DD></DL><!-- SECTION 1.3 ---------------------------------------------- --><a
+name=1.3></A>
+<hr>
+<b><font size=+2>1.3</FONT> Compatibilidad del producto</B>
+<p>
+<dl>
+  <dd>Si va a utilizar EE (HPR/IP) con z/OS v1r8, v1r9 o v1r10,
+deberá tener el arreglo para z/OS APAR OA26490 aplicado al
+sistema z/OS. Puede encontrar el nivel de PTF para este APAR en:
+<ul>
+<li>UA44023 - PTF para R1A0 (CSV1R10) </li>
+<li>UA44024 - PTF para R180 (CSV1R8) </li>
+<li>UA44025 - PTF para R190 (CSV1R9) </li>
+</ul>
+  <p>[<A href="#TOP" >Volver al principio</A>] [<A href="#ToC" >Tabla de contenido</A>]
+</P></DD></DL><!-- SECTION 2 ------------------------------------------------ --><a
+name=2></A>
+<hr>
+<b><font size=+2>2</FONT> Información de instalación</B>
+<p>
+<dl>
+  <dd>Communications Server para Windows Versión 6.4
+  se entrega como un CD-ROM y está disponible como un paquete descargable. <p>[<A href="#TOP" >Volver al principio</A>] [<A href="#ToC" >Tabla de contenido</A>]
+</P></DD></DL><!-- SECTION 2.1 ---------------------------------------------- --><a
+name=2.1></A>
+<hr>
+<b><font size=+2>2.1</FONT> Requisitos de hardware</B>
+<p>
+<dl>
+  <dd>Communications Server para Windows, versión 6.4, se ejecuta en
+  cualquier sistema operativo de 32 bits soportado por Windows XP, Windows Server 2003 (Standard   Edition o Enterprise Edition) o Windows Vista o Windows Server 2008. Dependiendo del entorno de red
+y la plataforma Windows utilizada, es posible que sean necesarios un procesador más rápido y memoria adicional.
+<p>Es necesario disponer de 5 MB de espacio de disco en la unidad de arranque y 175 MB en cualquier
+unidad de disco duro para uso permanente.
+<p>Los clientes API SNA se ejecutan en modalidad de 32 bits en cualquier hardware que dé soporte a
+  Windows XP, Windows Server 2003 (Standard Edition o Enterprise Edition), Windows Vista o Windows Server 2008.Los clientes API SNA requieren 25 MB en cualquier
+unidad de disco duro para uso permanente.
+<p>Los clientes de administración remota se ejecutan en cualquier hardware
+  que dé soporte a sistema operativos de 32 bits para Windows XP, Windows Server 2003 (Standard
+  Edition o Enterprise Edition), Windows Vista o Windows Server 2008.
+<p>[<A href="#TOP" >Volver al principio</A>] [<A href="#ToC" >Tabla de contenido</A>]
+</P></DD></DL><!-- SECTION 2.2 ---------------------------------------------- --><a
+name=2.2></A>
+<hr>
+<b><font size=+2>2.2</FONT> Requisitos de software</B>
+<p>
+<dl>
+  <dd>Communications Server para Windows requiere uno de los siguientes sistemas operativos de 32 bits:
+<ul>
+    <li>Windows XP Professional<li>Windows Server 2003 Standard Edition o Enterprise Edition<li>Windows Vista Professional, Enterprise o Ultimate<li>Windows Server 2008
+    </LI></UL>
+  <p>Además:
+<ul>
+    <li>Es necesario TCP/IP IPv4/IPv6 para el servidor TN3270E e IPv4 es necesario para el servidor TN5250.
+    <li>Es necesario TCP/IP para AnyNet (sólo IPv4) y Enterprise Extender (IPv4 o IPv6).    <li>Es necesario TCP/IP IPv4/IPv6 para las comunicaciones con los clientes API SNA.
+    <li>TCP/IP IPv6 debe configurarse en Windows Server
+    2003, Windows XP, Windows Vista o Windows Server 2008 para poder utilizar EEDLC IPv6 para las    comunicaciones con otros nodos.
+    <li>Es necesario TCP/IP IPv4 para la administración remota.    </LI></UL>
+  <p>Se necesita uno de los navegadores siguientes para instalar Communications Server utilizando el Launchpad:
+<ul>
+    <li>Internet Explorer 6.0 o superior
+  <li>Mozilla 1.7 o superior
+  <li>Firefox 1.5 o superior
+  <li>SeaMonkey 1.0 o superior </LI></UL>
+  <p>Los clientes API SNA requieren:
+<ul>
+    <li>Windows XP Professional (32 bits o 64 bits en modalidad de 32 bits)<li>Windows Server 2003 Standard Edition o Enterprise Edition (32 bits o
+64 bits en modalidad de 32 bits)<li>Windows Vista (32 bits o 64 bits en modalidad de 32 bits)<li>Windows Server 2008 (32 bits)
+    <li>TCP/IP IPv4/IPv6 para las comunicaciones con Communications
+    Server para Windows </LI></UL>
+ <p>[<A href="#TOP" >Volver al principio</A>] [<A href="#ToC" >Tabla de contenido</A>]
+</P></DD></DL><!-- SECTION 2.3 ---------------------------------------------- --><a
+name=2.3></A>
+<hr>
+<b><font size=+2>2.3</FONT>
+Instalación</B>
+<p>
+<dl>
+  <dd>Tabla de contenido de la subsección
+<br
+  ><A href="#2.3.1" ><b>2.3.1</B> Instalación de 6.4</A>
+  <br><A href="#2.3.2" ><b>2.3.2</B> Consideraciones sobre
+  la instalación</A> <br><A href="#2.3.3" ><b>2.3.3</B>
+  Limpieza posterior a la instalación</A> <br><A href="#2.3.4" ><b>2.3.4</B>
+  Mantenimiento del producto</A> <br><A href="#2.3.5" ><b>2.3.5</B>
+  Habilitación del registro de anotaciones de Windows Installer</A>
+  <p>[<A href="#TOP" >Volver al principio del documento</A>]
+[<A href="#ToC" >Tabla de contenido</A>]
+<p><!-- SECTION 2.3.1 -------------------------------------------- --><a
+  name=2.3.1></A></P>
+  <dt><b><font size=+1
+  >2.3.1</FONT> Instalación de 6.4</B>
+  <dd>Las instrucciones de instalación se encuentran en la publicación <I
+  >Guía de iniciación rápida</I> en <a
+  href="http://www.ibm.com/software/network/commserver/windows/library/index.html"
+  >http://www.ibm.com/software/network/commserver/windows/library/index.html</A>
+
+  <p>También puede consultar la <I>Guía de iniciación rápida</I> desde el
+paquete de instalación.
+<p>[<A href="#2.3" >Volver al principio de la subsección</A>]
+[<A href="#TOP" >Volver al principio del documento</A>]
+[<A href="#ToC" >Tabla de contenido</A>]
+<p><!-- SECTION 2.3.2 -------------------------------------------- --><a
+  name=2.3.2></A></P>
+  <dt><b><font size=+1
+  >2.3.2</FONT> Consideraciones sobre la instalación</B>
+  <p></P>
+  <dd>
+  <dl>
+    <dt><b>Cerrar otras aplicaciones</B>
+    <dd>Dado que Communications Server interactúa con varios productos que podrían
+estar instalados en su sistema y requiere que se reinicie, debe cerrar otras aplicaciones antes de
+instalar Communications Server.
+    <p></P>
+    <dt><b>Ejecución automática del CD</B>
+    <dd>Puede ejecutar esta funcionalidad en Windows XP,
+    Windows Server 2003 (Standard Edition o Enterprise Edition),
+    Windows Vista y Windows Server 2008.
+    <p></P>
+    <dt><b>Communications Server y
+    Microsoft SNA Server</B>
+    <dd>Communications Server y Microsoft SNA Server no se pueden instalar en
+la misma partición primaria. Muchos de los servicios comunes que coinciden
+entre los productos no son compatibles.
+    <p></P>
+    <dt><b>Derechos de usuario de administración necesarios</B>
+    <dd>Un usuario de administración de Communications Server debe tener el
+derecho de usuario avanzado <b>Cargar y descargar controladores de
+dispositivo</B>, como se especifica en el Administrador de usuarios de
+Windows. Seleccione el menú <b
+    >Directivas &gt; Derechos de usuario </B> y debe
+estar seleccionado <b
+    >Mostrar derechos de usuario avanzados</B>. Puede
+añadir explícitamente este derecho a cada usuario. También puede añadir
+este derecho de usuario al grupo de usuarios IBMCSADMIN.
+    <p></P>
+    <dt><b>Instalación del controlador de dominio</B>
+    <dd>Al instalar Communications Server en un controlador de dominio primario
+o de copia de seguridad, debe habilitar el derecho de usuario <b
+    >Inicio de
+sesión local</B> para los grupos de usuarios locales IBMCSADMIN y
+IBMCSAPI.
+    <p></P></DD></DL>
+  <p>[<A href="#2.3" >Volver al principio de la subsección</A>]
+[<A href="#TOP" >Volver al principio del documento</A>]
+[<A href="#ToC" >Tabla de contenido</A>]
+<p><!-- SECTION 2.3.3 -------------------------------------------- --><a
+  name=2.3.3></A></P>
+  <dt><b><font size=+1
+  >2.3.3</FONT> Limpieza posterior a la instalación</B>
+  <dd>Es necesario rearrancar el sistema después de instalar el servidor.
+<p>[<A href="#2.3" >Volver al principio de la subsección</A>]
+[<A href="#TOP" >Volver al principio del documento</A>]
+[<A href="#ToC" >Tabla de contenido</A>]
+<p><!-- SECTION 2.3.4 -------------------------------------------- --><a
+  name=2.3.4></A></P>
+  <dt><b><font size=+1
+  >2.3.4</FONT> Mantenimiento del producto</B>
+  <p>Este Communications Server 6.4 es una instalación completa y sólo se
+  pueden instalar los CSD para 6.4 después de esta instalación.
+  <p>IBM proporciona un servicio de mantenimiento correctivo mediante:
+  <ul>
+    <li>arreglos individuales (arreglos APAR o APARs) y
+<li>revisiones del producto (CSD).
+</LI></UL>
+  <p></P>
+  <dd>
+  <dl>
+    <dt><b>Disponibilidad de APAR y CSD
+</B>
+    <dd>
+    <h4>Arreglos APAR:</H4>Communications Server incorpora arreglos APAR concretos para resolver defectos del producto.  Un arreglo
+APAR sobre un componente concreto sustituirá a los APAR
+anteriores de ese componente. Los arreglos APAR también requieren que esté instalado el CSD más reciente.
+    <p>
+    <h4>CSD:</H4>Un CSD es una renovación del producto con todos los APAR acumulativos. Se trata de una instalación completa pero instala el CSD de
+renovación en el mismo directorio y con las mismas características que el nivel anterior, después de que éste se haya desinstalado.
+
+</DD></DL>
+   <p>
+    Encontrará los fixpacks más recientes y CSD para Communications Server para Windows
+    bajo la marca de Websphere ubicada en Fix Central :<br>
+    <a href=http://www.ibm.com/support/fixcentral/ >http://www.ibm.com/support/fixcentral/ </a>
+    <br>
+  <p>[<A href="#2.3" >Volver al principio de la subsección</A>]
+[<A href="#TOP" >Volver al principio del documento</A>]
+[<A href="#ToC" >Tabla de contenido</A>]
+<p></P></DD></DL><!-- SECTION 2.3.5 -------------------------------------------- --><a
+name=2.3.5></A>
+<dt><b><font size=+1>2.3.5</FONT> Habilitación del registro de anotaciones de Windows Installer</B>
+<dd>El registro de anotaciones de instalación de los productos de Communications Server se especifica cuando se invoca la instalación, ya sea a través del Launchpad o desde la línea de mandatos, especificando que desea realizar el registro de anotaciones de forma explícita.
+<p>Para Windows Installer 4.0 en Windows Vista y superiores, los productos de Communications Server tienen habilitado
+el registro de anotaciones verboso de forma predeterminada para las operaciones de instalación/desinstalación.
+Sin embargo, para los sistemas Windows anteriores a Vista, de forma predeterminada, la desinstalación iniciada desde
+la opción "Agregar o Quitar Programas" no se registrará.
+<p>En los sistemas más antiguos, es necesario añadir la siguiente entrada en el registro de la máquina para poder
+registrar la desinstalaciones iniciadas desde la opción "Agregar o Quitar Programas":
+<ul>
+  <li>Clave del sistema = HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Installer
+<li>Nombre del valor = Logging
+<li>Tipo de datos = REG_SZ (serie)
+<li>Datos = voicewarmup
+</LI></UL>Si desea más detalles, consulte el sitio web de registro "Cómo habilitar el registro de Windows Installer"
+en:
+<a
+href="http://support.microsoft.com/kb/223300">http://support.microsoft.com/kb/223300/es</A>
+<p>Para poder registrar una desinstalación, antes de desinstalar cualquiera de los tres productos de Communications Server
+ejecute msilogging_add.reg, que está instalado en Tools bajo el directorio de instalación principal de Communications Server,
+para actualizar el registro.
+<p>Nota: Puesto que el registro de Windows Installer se aplica a todos los productos que se instalan o desinstalan en el sistema,
+dejar este registro de anotaciones habilitado puede tener efectos negativos en el rendimiento y reducir el espacio en disco.
+<p>Después de la desinstalación, ejecute msilogging_remove.reg para eliminar la entrada. Aunque el producto se haya desinstalado, los
+archivos de msilogging permanecerán en Tools bajo el directorio de instalación principal de Communications Server. Estos archivo
+no se desinstalan con el producto.
+<p>Los registros de anotaciones de instalación estarán el directorio de registro que se haya especificado al instalar el producto.
+Cuando desintale el producto utilizando la opción "Agregar o Quitar Programas", el registro de anotaciones de desinstalación
+se encontrará en el directorio TEMP de la máquina. El nombre del archivo de registro de anotaciones tendrá el formato
+MSI***.log, donde *** es un número cualquiera. Utilice la indicación de fecha y hora para determinar qué archivos corresponden
+a la desinstalación de Communications Server.
+<p>[<A href="#2.3" >Volver al principio de la subsección</A>]
+[<A href="#TOP" >Volver al principio del documento</A>]
+[<A href="#ToC" >Tabla de contenido</A>]
+<p><!-- SECTION 3 ------------------------------------------------ --><a
+name=3></A>
+<hr>
+<b><font size=+2>3</FONT>
+  Información de desinstalación</B>
+<dl>
+  <dd>
+  <p><b>Eliminación de versiones anteriores de
+  Communications Server</B>
+  <p>El APAR JR21456 de Communications Server 6.1.2 proporciona un paquete de
+limpieza que elimina el nivel de código anterior de Communications Server
+6.1.2 y la información del registro.
+Para garantizar la completa desinstalación del producto
+  Communications Server anterior, puede descargar el paquete de limpieza (JR21546) de <a
+  href="http://www.ibm.com/support/docview.wss?rs=2262&amp;uid=swg24009834"
+  >http://www.ibm.com/support/docview.wss?rs=2262&amp;uid=swg24009834</A>
+
+  <p>Las instrucciones de desinstalación se encuentran en la publicación <I >Guía
+de iniciación rápida</I> en <a
+  href="http://www.ibm.com/software/network/commserver/windows/library/index.html"
+  >http://www.ibm.com/software/network/commserver/windows/library/index.html</A>
+
+  <p>También puede consultar la <I>Guía de iniciación rápida</I> desde el
+soporte de instalación.
+<p>Si Personal Communications está instalado en la misma máquina que
+Communications Server, <b>debe</B> desinstalar Personal Communications antes de
+desinstalar Communications Server.
+<p>Si no se puede desinstalar Personal Communications satisfactoriamente,
+vaya a la página de soporte siguiente de Communications Server y busque
+las notas técnicas (Technotes) para obtener información adicional:
+<br><a
+  href="http://www.ibm.com/support/search.wss?tc=SSHQNF&amp;rs=2262&amp;rank=8&amp;dc=DB520+D800+D900+DA900+DA800+DB560&amp;dtm"
+  >http://www.ibm.com/support/search.wss?tc=SSHQNF&amp;rs=2262&amp;rank=8&amp;dc=DB520+D800+D900+DA900+DA800+DB560&amp;dtm</A>
+
+  <p>Todas las
+aplicaciones que utilicen Communications Server deben finalizarse antes de
+desinstalar el producto.
+Si se intenta desinstalar Communications Server mientras se está
+ejecutando una aplicación (como APING o Personal Communications), la
+desinstalación se detendrá hasta que finalice la aplicación.
+<p><b>Eliminación de versiones anteriores de
+  Communications Server para Client Access</B>
+  <p>
+  <p>Para eliminar la versión 6.1.2 o las versiones anteriores, debe
+ejecutar regsvr32.exe sobre cwbzzodb.dll y cwbzzidx.dll. Consulte
+<A href="#5.4.2" >Reparación
+tras la instalación o desinstalación de Client Access</A> para obtener más
+información.<p>Para eliminar la versión 6.1.3, vaya a Agregar o quitar programas
+y seleccione el programa que desea eliminar.
+<p>[<A href="#TOP" >Volver al principio del documento</A>]
+[<A href="#ToC" >Tabla de contenido</A>]
+<p></P></DD></DL><!-- SECTION 4 ------------------------------------------------ --><a
+name=4></A>
+<hr>
+<b><font size=+2>4</FONT> Información del sitio Web</B>
+<p>
+<dl>
+  <dt><b>Información sobre el producto</B>
+  <dd>Para obtener la información más reciente sobre la familia de productos IBM Communications Server,
+  visite el sitio Web de Communications Server en <br>
+  <p> <a href="http://www.ibm.com/software/network/commserver">
+      http://www.ibm.com/software/network/commserver</a>.
+  <p>
+Esta página incluye información y enlaces a información relacionada, hojas
+de especificaciones, preguntas que se formulan con frecuencia y sus
+respuestas, etc.
+<p></P>
+  <dt><b>Soporte del producto</B>
+  <dd>Para obtener la información de soporte más reciente, visite el sitio Web
+  de soporte de Communications Server en <br>
+  <p> <a href="http://www.ibm.com/software/network/commserver/support">
+  http://www.ibm.com/software/network/commserver/support</A>.
+  <p>
+Este sitio Web proporciona información y enlaces a arreglos de código,
+consejos, grupos de noticias, mantenimiento, etc.
+<p></P>
+  <dt><b>Notas técnicas</B>
+  <dd>Busque las notas técnicas (Technotes) en la base de datos de soporte de IBM, en <a
+  href="http://www.ibm.com/support/search.wss?tc=SSHQNF&amp;rs=2262&amp;rank=8&amp;dc=DB520+D800+D900+DA900+DA800+DB560&amp;dtm"
+  >http://www.ibm.com/support/search.wss?tc=SSHQNF&amp;rs=2262&amp;rank=8&amp;dc=DB520+D800+D900+DA900+DA800+DB560&amp;dtm</A>.
+
+  <p></P>
+  <dt><b>Fix Central</B>
+  <dd>Para obtener los fixpacks más recientes, CSD o información de release actualizada para Communications     Server para Windows, mire debajo de la marca de Websphere ubicada en Fix Central: <br>
+    <a href=http://www.ibm.com/support/fixcentral/ >http://www.ibm.com/support/fixcentral/ </a>
+    <br>
+   <p></P></DD></DL>
+
+<p>[<A href="#TOP" >Volver al principio</A>] [<A href="#ToC" >Tabla de contenido</A>]
+<!-- SECTION 5 ------------------------------------------------ --><a name=5></A>
+<hr>
+<b><font size=+2>5</FONT> Información del release</B>
+<p>
+<dl>
+  <dd>Tabla de contenido de la sección
+<br>
+  <A href="#5.1" ><b>5.1</B> Características y posibilidades de la versión 6.4</A> <br>
+  <A href="#5.2" ><b>5.2</B> Características y posibilidades de la versión 6.1.3</A> <br>
+  <A href="#5.3" ><b>5.3</B> Características y posibilidades de la versión 6.1.2</A> <br>
+  <A href="#5.4" ><b>5.4</B> Cliente API SNA</A> <br>
+  <A href="#5.5" ><b>5.5</B> Administración remota</A> <br>
+  <A href="#5.6" ><b>5.6</B> Configuración de APINGD</A>
+  <p>[<A href="#TOP" >Volver al principio</A>] [<A href="#ToC" >Tabla de contenido</A>]
+</P></DD></DL><!-- SECTION 5.1 ---------------------------------------------- --><a
+name=5.1></A>
+<hr>
+<b><font size=+2>5.1</FONT> Características y posibilidades de la versión 6.4</B>
+<p>
+<dl>
+  <dd>Tabla de contenido de la subsección
+<br>
+  <A href="#5.1.1" ><b>5.1.1</B> Soporte IPv6 para TN3270E y cliente API SNA</A> <br>
+  <A href="#5.1.2" ><b>5.1.2</B> Soporte para APPC Cancel Conversation</A> <br>
+  <A href="#5.1.3" ><b>5.1.3</B> Mejora de la sincronización del programa de transacción</A> <br>
+  <A href="#5.1.4" ><b>5.1.4</B> Adición de soporte para suprimir el nombre de PU en ACTPU</A> <br>
+  <A href="#5.1.5" ><b>5.1.5</B> ARB progresivo</A> <br>
+  <A href="#5.1.6" ><b>5.1.6</B> Retardo de conmutador de vía de acceso</A> <br>
+  <A href="#5.1.7" ><b>5.1.7</B> Inhabilitar soporte de activación remota para el enlace</A> <br>
+</DD></DL>
+
+<p><!-- SECTION 5.1.1 ------------------------------------------- --><a
+name=5.1.1></A></P>
+<dt><b><font size=+1>5.1.1</FONT> Soporte IPv6 para TN3270E y cliente API SNA</B>
+<dd>El servidor TN3270E soporta los clientes IPv4 y IPv6 y proporciona el protocolo IPv6 instalado en la máquina del servidor.
+El protocolo IPv6 se puede instalar en Windows XP y en releases posteriores del sistema operativo Windows. El cliente API SNA de IBM también tiene habilitado el soporte IPv6.
+<p><B>NOTA:</B> AnyNet SNA sobre IP no soporta el direccionamiento IPV6. La función AnyNet de Communications Server para Windows se va a anular en el próximo release. Debe planificar la sustitución de esta función con Enterprise Extender o el uso de una implementación de cliente API SNA.
+<p>[<A href="#5.1" >Volver al principio de la subsección</A>]
+[<A href="#TOP" >Volver al principio del documento</A>]
+[<A href="#ToC" >Tabla de contenido</A>]
+<p><!-- SECTION 5.1.2 ------------------------------------------- --><a
+name=5.1.2></A></P>
+<dt><b><font size=+1>5.1.2</FONT> Soporte para APPC Cancel Conversation</B>
+<dd>CANCEL_CONVERSATION es un verbo de control que cancela una conexión entre una LU local y una LU socia utilizando un programa de transacción específico (tp_id) y una conversación (conv_id).
+<p>La definición de la estructura VCB para el verbo CANCEL_CONVERSATION es la siguiente:
+<pre>typedef struct cancel_conversation
+{
+unsigned short opcode; /* código de operación del verbo */
+unsigned char opext; /* código de extensión del verbo */
+unsigned char format; /* formato */
+unsigned short primary_rc; /* código de retorno primario */
+unsigned long secondary_rc; /* código de retorno secundario */
+unsigned char tp_id[8]; /* identificador de TP */
+unsigned long conv_id; /* identificador de conversación */
+} CANCEL_CONVERSATION;
+</pre>
+Consulte la guía de programación de cliente/servidor para conocer el uso de este verbo.
+[<A href="#5.1" >Volver al principio de la subsección</A>]
+[<A href="#TOP" >Volver al principio del documento</A>]
+[<A href="#ToC" >Tabla de contenido</A>]
+<p><!-- SECTION 5.1.3 ------------------------------------------- --><a
+name=5.1.3></A></P>
+<dt><b><font size=+1>5.1.3</FONT> Mejora de la sincronización del programa de transacción</B>
+<dd>La versión anterior de Communication Server para Windows sólo soporta tres niveles de sincronización (<b>Alguno, Ninguno y Confirmar </b>). Pero se han añadido dos sincronizaciones más (<b>SYNCPT negociable y SYNCPT necesario</b>) a la definición del programa de transacción. <p>
+<li><b>SYNCPT negociable</b> El programa de transacción soporta el nivel de sincronización Ninguno, Confirmar o Punto de sincronismo.
+<li><b>SYNCPT necesario</b> El programa de transacción soporta el nivel de sincronización Punto de sincronismo.
+<p>El nivel de sincronización necesario se puede seleccionar al definir el programa de transacción desde el panel básico de la aplicación de configuración del nodo.
+<p>[<A href="#5.1" >Volver al principio de la subsección</A>]
+[<A href="#TOP" >Volver al principio del documento</A>]
+[<A href="#ToC" >Tabla de contenido</A>]
+<p><!-- SECTION 5.1.4 ------------------------------------------- --><a
+name=5.1.4></A></P>
+<dt><b><font size=+1>5.1.4</FONT> Adición de soporte para suprimir el nombre de PU en ACTPU</B>
+<dd>
+En general, Communications Server para Windows identifica el nombre de PU en el mensaje REQACTPU al activar PU de DLUR.
+Establezca la palabra clave NO_PUNAME_TO_HOST para evitar enviar esta identificación.
+La palabra clave NO_PUNAME_TO_HOST del archivo .ACG forma parte de la definición de NODO.
+
+<p>Este parámetro se puede establecer/anular en la interfaz gráfica de usuario de configuración bajo el panel Avanzado de la definición de Nodo, así como en el archivo .ACG.
+<p>[<A href="#5.1" >Volver al principio de la subsección</A>]
+[<A href="#TOP" >Volver al principio del documento</A>]
+[<A href="#ToC" >Tabla de contenido</A>]
+<p><!-- SECTION 5.1.5 ------------------------------------------- --><a
+name=5.1.5></A></P>
+<dt><b><font size=+1>5.1.5</FONT> ARB progresivo </B>
+<dd>
+IBM Communications Server para Windows normalmente anuncia soporte en las conexiones RTP para todos los algoritmos ARB disponibles: estándar, modalidad de respuesta y modalidad progresiva. Para utilizar el proceso RTP normal a fin de que Communications Server para Windows utilice el mejor mecanismo RTP disponible según la capacidad del sistema remoto, establezca este parámetro en ANY.
+<p>
+Para personalizar el funcionamiento de RTP, especifique uno de los siguientes valores para la palabra clave ARB_SUPPORT anterior de la sección NODO:
+<li><b>FORCE_STANDARD_ARB:</b><br>
+<dd>Si se establece este valor, Communications Server para Windows sólo anunciará soporte para el algoritmo ARB estándar, no para el algoritmo de modalidad de respuesta o de modalidad progresiva. </dd>
+
+<li><b>NO_PROGRESSIVE_ARB:</b><br>
+<dd>Si se establece este valor, Communications Server para Windows anunciará soporte para los algoritmos ARB estándar y de modalidad de respuesta, pero no para el algoritmo de modalidad progresiva. </dd>
+
+<p>[<A href="#5.1" >Volver al principio de la subsección</A>]
+[<A href="#TOP" >Volver al principio del documento</A>]
+[<A href="#ToC" >Tabla de contenido</A>]
+<p><!-- SECTION 5.1.6 ------------------------------------------- --><a
+name=5.1.6></A></P>
+<dt><b><font size=+1>5.1.6</FONT> Retardo de conmutador de vía de acceso</B>
+<dd>Retraso mínimo en segundos antes de que se produzca una conmutación de vía de acceso en las conexiones RTP. La especificación de un retraso evita intentos innecesarios de conmutación de vía de acceso ocasionados por la escasez temporal de recursos en el sistema remoto, en particular cuando no hay ninguna otra ruta disponible. <p>
+
+El valor predeterminado para este parámetro es cero, lo que indica que puede producirse un intento de conmutación de vía de acceso en cuanto el protocolo indica que es necesaria.
+<p>Consulte el capítulo 23, sección RTP_TUNNING, del manual de consulta de archivos de configuración para obtener más información.
+<p>[<A href="#5.1" >Volver al principio de la subsección</A>]
+[<A href="#TOP" >Volver al principio del documento</A>]
+[<A href="#ToC" >Tabla de contenido</A>]
+<p><!-- SECTION 5.1.7 ------------------------------------------- --><a
+name=5.1.7></A></P>
+<dt><b><font size=+1>5.1.7</FONT> Inhabilitar soporte de activación remota para el enlace</B>
+<dd>Se ha añadido un nuevo parámetro, DISABLE_REMOTE_ACT, al registro de definición de enlace. Evita que el nodo remoto active la estación de enlace.
+Los valores posibles son: <br>
+   <ul>
+   <li>DISABLE_REMOTE_ACT=1, SÍ. Sólo el nodo local puede activar la estación de enlace; si el nodo remoto intenta activarla, CS Windows rechazará el intento. </li>
+   <li>DISABLE_REMOTE_ACT=0, NO (valor predeterminado). El nodo remoto puede activar la estación de enlace. </li>
+   </ul>
+
+<p>El parámetro DISABLE_REMOTE_ACT del archivo .ACG forma parte de la definición de LINK_STATION. Este parámetro se puede establecer/anular en la definición de estación de enlace bajo el panel de reactivación.
+<p>[<A href="#5.1" >Volver al principio de la subsección</A>]
+[<A href="#TOP" >Volver al principio del documento</A>]
+[<A href="#ToC" >Tabla de contenido</A>]
+<p>
+<DL></DL><!-- SECTION 5.2 ---------------------------------------------- --><a
+name=5.2></A>
+<hr>
+<b><font size=+2>5.2</FONT> Cliente API SNA</B>
+<p>
+<dl>
+  <dd>Tabla de contenido de la subsección
+<br
+  ><A href="#5.2.1" ><b>5.2.1</B> La aplicación no se reinicia</A> <br><A href="#5.2.2" ><b>5.2.2</B> Soporte multiusuario</A>
+  <br><A href="#5.2.3" ><b>5.2.3</B> Configuración en Windows Terminal Client (WTC)</A> <br><A href="#5.2.4" ><b>5.2.4</B> Notas sobre el rastreo y las anotaciones de mensajes del cliente API SNA</A> <br><A href="#5.2.5" ><b>5.2.5</B>
+  Modificaciones del servidor de directorios LDAP</A>
+  <p><!-- SECTION 5.2.1 -------------------------------------------- --><a
+  name=5.2.1></A></P>
+  <dt><b><font size=+1
+  >5.2.1</FONT> La aplicación no se reinicia</B>
+  <dd>Si la aplicación no se reinicia correctamente después de perderse una
+conexión cliente API SNA con el servidor, es posible que las DLL y los
+ejecutables del cliente API SNA no se hayan descargado correctamente de
+la memoria. En este caso, es posible que la aplicación no se reinicie
+incluso después de restablecer la conexión.
+<p>Si ocurre esto, debe finalizar manualmente los ejecutables del cliente API SNA. El programa de utilidad de línea de mandatos resetapi.exe se instala con
+las API cliente de Windows.
+Este programa de utilidad finaliza los
+ejecutable del cliente API SNA, sin necesidad de volver a arrancar el
+cliente.</P>
+  <p>[<A href="#5.2" >Volver al principio de la subsección</A>]
+[<A href="#TOP" >Volver al principio del documento</A>]
+[<A href="#ToC" >Tabla de contenido</A>]
+<p><!-- SECTION 5.2.2 -------------------------------------------- --><a
+  name=5.2.2></A></P>
+  <dt><b><font size=+1
+  >5.2.2</FONT> Soporte multiusuario</B>
+  <dd>Los sistemas que ejecutan el entorno Windows Terminal Server (WTS) con el cliente API SNA pueden dar soporte a varios usuarios. A continuación se muestra un escenario para utilizar un
+cliente de Windows Terminal Server, como Escritorio remoto, con una
+conexión a un WTS con Personal
+Communications con el cliente API SNA en un entorno multiusuario.
+<p><b>Clientes de escritorio remoto
+  &lt;====&gt; WTS con Personal Communications y el cliente API SNA &lt;====&gt;
+  CS/Windows &lt;====&gt; sistema principal z/OS</B>
+  <p>[<A href="#5.2" >Volver al principio de la subsección</A>]
+[<A href="#TOP" >Volver al principio del documento</A>]
+[<A href="#ToC" >Tabla de contenido</A>]
+<p><!-- SECTION 5.2.3 -------------------------------------------- --><a
+  name=5.2.3></A></P>
+  <dt><b><font size=+1
+  >5.2.3</FONT> Configuración en Windows Terminal Client (WTC)</B>
+  <dd>No se requiere configuración especial en WTC.
+Inicie la sesión en WTS mediante el cliente de Escritorio remoto u otro software de WTC. Utilice la
+sesión configurada de Personal Communications definida en el WTS.
+<p>La configuración en WTS es la siguiente:
+<ol>
+    <li>Configure el cliente API SNA para sesiones LUA. Esta configuración
+se puede efectuar para cada usuario.
+    <ol type=a>
+      <li>Seleccione <b>Configuración INI local</B>.      <li>Configure los datos globales como ID de usuario, Contraseña, etc.
+Para obtener más información, consulte la
+publicación <I
+      >Guía de iniciación rápida</I>.       <li>Cree una definición LUA que incluya el nombre de la sesión LUA, la
+dirección IP del servidor, etc. Para obtener más información, consulte la
+publicación <I>Guía de iniciación rápida</I>.       <li>Guarde la configuración.
+      <ul type=circle>
+        <li>Si desea guardar esta configuración para un usuario concreto, cree un
+directorio con el nombre de ese usuario (por ejemplo, <b
+        >usuario1</B>) y
+almacene el archivo de configuración con el nombre de ese usuario (por
+ejemplo, <b>usuario1.ini</B>). Para completar la configuración, vea el elemento número 3 debajo,
+              "<A href="#configINIperUser" >Para configurar un archivo .INI distinto para cada usuario</A>."        <li>Si desea que la configuración sea la misma para todos los usuarios,
+almacene el archivo en la ubicación por omisión con el nombre por omisión. El único cambio es el soporte de la configuración multiusuario.        </LI></UL></LI></OL>
+    <li>Configure Personal Communications para utilizar el cliente API SNA. El procedimiento es igual que el anterior, con o sin soporte WTS.
+    <ol type=a>
+      <li>Seleccione la interfaz <b>cliente API</B>.      <li>Seleccione la conexión <b>LUA0,1,2,3 vía WINRUI</B>.      <li>Pulse <b>Parámetros de enlace</B> y seleccione el nombre de la sesión
+configurada en el cliente API SNA.      <li>Mantenga los valores por omisión para el resto de los valores.      </LI></OL>
+    <li><a name=configINIperUser></A>
+      Para configurar un archivo .INI distinto para cada usuario, haga lo siguiente:
+    <ol type=a>
+      <li>Inicie la sesión en el sistema como el usuario para el que necesita
+configurar el archivo .INI.      <li>Vaya al panel <b>Propiedades del sistema &gt; Opciones avanzadas</B> y
+pulse <b>Variables de entorno</B>.      <li>Pulse <b>Variables de usuario&gt; Nueva</B>.      <li>Escriba <b>CSNTAPI</B> como valor de la variable y entre la vía de
+acceso al archivo .INI.
+      <p>          Por ejemplo, si la configuración del usuario 1 se encuentra en el archivo
+C:\usuario1\usuario1.ini y la configuración del usuario 2 se encuentra en
+C:\usuario2\usuario2.ini, la configuración es así:
+        <ul type=circle>
+        <li>Para el usuario 1, escriba <b
+        >CSNTAPI</B> como valor de la variable <b
+        >C:\usuario1\usuario1.ini</B> como vía de acceso<li>Para el usuario 2, escriba <b
+        >CSNTAPI</B> como valor de la variable y
+              <b
+        >C:\usuario2\usuario2.ini</B>" como vía de acceso</LI></UL></LI></OL></LI></OL>
+  <p>No hay más cambios en el procedimiento de configuración. La configuración
+de sesiones LUA, programas de transacciones, etc. permanece sin cambios. No es necesario cambiar la configuración de Personal Communications. Los
+pasos para configurar Personal Communications o cualquier aplicación LU
+siguen siendo los mismos.
+<p>[<A href="#5.2" >Volver al principio de la subsección</A>]
+[<A href="#TOP" >Volver al principio del documento</A>]
+[<A href="#ToC" >Tabla de contenido</A>]
+<p><!-- SECTION 5.2.4 -------------------------------------------- --><a
+  name=5.2.4></A></P>
+  <dt><b><font size=+1
+  >5.2.4</FONT> Notas sobre el rastreo y las anotaciones de mensajes del cliente API SNA</B>
+  <dd>
+  <ul>
+    <li>Si se selecciona la opción <b>Todos los rastreos de API</B> del Recurso de rastreo, los rastreos de depuración
+      también quedarán registrados en el archivo pcatrace.dat. Cuando recopile rastreos de depuración, debe seleccionar la opción <b>Todos los rastreos de API</B>. Pulse <b>Iniciar</B> para empezar el
+      rastreo.  El rastreo de depuración se detendrá cuando el rastreo se haya detenido o cuando el usuario salga
+      de la GUI del recurso de rastreo.</li>
+    <li>Las anotaciones de mensajes siempre se almacenan en el archivo MsgLog.dat.
+      Los archivos de anotaciones de mensajes (MsgLog.dat) se colocarán en 2 archivos de
+      131 KB de tamaño cada uno.
+      Esto permite reducir el tamaño del archivo de anotaciones de mensajes lo cual facilita
+      su gestión.  El recurso Infobundler recopilará los datos de ambos archivos de anotaciones
+      de mensajes.</li>
+    <li>El rastreo lo puede iniciar un administrador y también un usuario
+que no sea administrador. </li>
+    <li>El rastreo detallado (pcatrace.dat) se recopilará en múltiples
+archivos. Por omisión, cada archivo tiene un tamaño de 100 K, y el número
+máximo de archivos es de 999.
+</li>
+    <p>Los valores predeterminados (tamaño de archivo y número máximo de
+archivos) pueden modificarse con el mandato tracedg /s TamañoArch /n NúmMáx. Este
+valor es global. El valor establecido por un usuario afectará a todos
+los usuarios.     <p>Por ejemplo, tracedg /s 92160 /n 20 creará cada archivo
+pcatrace con un tamaño de 90 k, y el número de archivos que se crearán es
+de 20. Después de 20 archivos, se sobregrabará el primer archivo. </P>
+    <li>La ubicación predeterminada para Msglog.dat y pcatrace.dat es el
+directorio especificado por "APPDATA" (este valor se recopilará por
+separado para cada usuario). Esto puede cambiarse estableciendo la
+variable de entorno CSNTAPITRCLOG.
+  </li>
+    <li>Con esta versión se proporciona Infobundler para capturar los archivos de cliente clave necesarios
+      para diagnosticar problemas.  Siempre que intente resolver un problema con IBM, debería ejecutarlo
+      y enviar la salida resultante.
+Para ejecutar Infobundler, vaya al directorio de instalación del cliente API de SNA
+     (por ejemplo, C:\CSNTAPI) desde la línea de mandatos.
+Ejecute INFOB.exe desde la línea de
+      mandatos.  Por ejemplo:
+      <p>      C:&gt;INFOB
+      <p>Iniciará una serie de 13 pasos para finalmente recopilar la información
+      (los 11 documentos mencionados a continuación) en el archivo
+cspd.exe, que se encuentra en el directorio de instalación
+(por omisión, C:\Archivos de programa\IBM\CS SNA API Client).
+    <p>      Para resolver cualquier problema del que se informe, ejecute Infobundler y
+envíe el archivo cspd.exe al servicio de soporte de IBM.
+    <p>El resumen de características del recurso Infobundler para el cliente API SNA es el
+      siguiente:
+    <ol>
+      <li>Empaquetar MsgLog.dat (archivo(s) de anotaciones de mensajes de error)</li>
+      <li>Empaquetar pcatrace.dat (archivo(s) de datos de rastreo de depuración)</li>
+      <li>Empaquetar CSNTAPI.TRC (archivo de datos de rastreo sin formato)</li>
+      <li>Empaquetar CSNTAPI.FMT (archivo de datos de rastreo con formato)</li>
+      <li>Empaquetar APIERROR.LOG (archivo de anotaciones de error de API)</li>
+      <li>Empaquetar Eventlogs</li>
+      <li>Empaquetar Dr.Watson Log</li>
+      <li>Empaquetar CSNTAPI.INI</li>
+      <li>Empaquetar todas las claves del registro. Tenga en cuenta que las variables
+          de entorno del usuario y las variables de entorno del sistema forman parte de
+          la configuración del Registro.  Las variables de entorno del usuario corresponderán a las
+          del usuario que ejecuta Infobundler.</li>
+      <li>Empaquetar el listado de directorio CSNTAPI</li>
+      <li>Empaquetar el listado de directorio Windows\system32. Esto resultará útil para
+      determinar si la aplicación está utilizando WINRUI32.DLL, WINAPPC32.DLL, etc. de la
+      instalación del cliente API SNA o bien de la instalación de Microsoft Windows.
+          Hemos observado que si se utilizan las API de la instalación de
+          Microsoft Windows, la aplicación no funciona.      </LI></OL></LI></UL>
+  <p>[<A href="#5.2" >Volver al principio de la subsección</A>]
+[<A href="#TOP" >Volver al principio del documento</A>]
+[<A href="#ToC" >Tabla de contenido</A>]
+<p><!-- SECTION 5.2.5 -------------------------------------------- --><a
+  name=5.2.5></A></P>
+  <dt><b><font size=+1
+  >5.2.5</FONT> Modificaciones del servidor de directorios LDAP</B>
+  <dd>La información de configuración del cliente API SNA se puede guardar en un directorio LDAP.
+Los servidores de directorios soportados son Netscape Directory Server
+Versión 4.0, IBM Directory Server Versión 3.1.1 y Lotus
+Domino<font size=-2><sup>
+  </SUP></FONT>Versión 5.0.
+<p>Se proporcionan extensiones de esquema para Netscape Directory Server
+y deben añadirse a la configuración del servidor antes de configurar los
+clientes API SNA. Los otros servidores de directorios soportados ya
+contienen las definiciones de esquema necesarias. El control de acceso de
+entradas y atributos se debe controlar utilizando el programa de utilidad
+de administración del servidor de directorios.</P>
+  <p>El programa de utilidad SNA API LDAP le permite modificar las entradas
+extendidas. El ID de usuario utilizado con este programa de utilidad debe
+tener acceso a las entradas de escritura del directorio. Puede utilizar el
+ID de administrador de directorios (que tiene estos permisos) al ejecutar
+el programa de utilidad de configuración del cliente.
+<p>Par añadir las extensiones de esquema al servidor Netscape, añada las
+líneas siguientes al archivo slapd.conf, situado en el directorio \config
+del servidor de directorios de Netscape.
+<p><tt>include ibmcs-oc-ns.conf</TT>
+  <br><tt>include ibmcs-at-ns.conf</TT>
+  <p>El nombre de la vía de acceso de este directorio depende del lugar de
+instalación del servidor de directorios y del nombre del servidor de
+directorios. Vea el ejemplo siguiente:
+<p><pre><em>letra_unidad</EM>:\netscape\suitespot\slapd-<em>nombre_sistema_principal</EM>\config</PRE>
+  <UL></UL>
+  <p>[<A href="#5.2" >Volver al principio de la subsección</A>]
+[<A href="#TOP" >Volver al principio del documento</A>]
+[<A href="#ToC" >Tabla de contenido</A>]
+<p></P></DD></DL><!-- SECTION 5.3 ---------------------------------------------- --><a
+name=5.3></A>
+<hr>
+<b><font size=+2>5.3</FONT> Administración remota</B>
+<dl>
+  <p><!-- SECTION 5.3.1 -------------------------------------------- --><a
+  name=5.3.1></A>
+  <dt><b><font size=+1
+  >5.3.1</FONT> Acceso al archivo de anotaciones de mensajes</B>
+  <dd>Puede revisar el archivo de anotaciones de mensajes en una máquina remota
+en la que esté instalado Communications Server. Correlacione la unidad donde está instalado Communications Server.
+A continuación abra la aplicación Visor de anotaciones de Communications
+Server y abra el archivo de anotaciones remoto pcwmsg.mlg.
+<p>[<A href="#5.3" >Volver al principio de la subsección</A>]
+[<A href="#TOP" >Volver al principio del documento</A>]
+[<A href="#ToC" >Tabla de contenido</A>]
+<p><!-- SECTION 5.3.2 -------------------------------------------- --><a
+  name=5.3.2></A></P>
+  <dt><b><font size=+1
+  >5.3.2</FONT> Administración de distintas versiones de servidor</B>
+  <dd>La configuración remota sólo puede configurar Communications Server si
+es de una versión del mismo nivel. Por ejemplo, la configuración remota de
+la versión 6.1.3 sólo puede configurar un nodo Communications Server de la
+versión 6.1.3.
+<p>[<A href="#5.3" >Volver al principio de la subsección</A>]
+[<A href="#TOP" >Volver al principio del documento</A>]
+[<A href="#ToC" >Tabla de contenido</A>]
+<p><!-- SECTION 5.4 ---------------------------------------------- --><a
+  name=5.4></A></P>
+  <dt><b><font size=+2
+  >5.4</FONT> Configuración de APINGD</B>
+  <dd>Para poder ejecutar APING en un nodo SNA, debe definirse APINGD TP (Programa de transacción) correctamente en el archivo de configuración. Cuando se
+crea un nuevo archivo de configuración, se define APINGD TP en el directorio en el que se ha instalado Communications Server. Si se copia un archivo de configuración
+de otro recuadro o de otro release no instalado en el mismo directorio, debe actualizarse el nombre de la vía de acceso de APINGD.  Por ejemplo,
+si va a utilizar un archivo de configuración de la versión 6.1.3 con la vía de acceso de instalación predeterminada C:\IBMCS en la versión
+6.4 con la vía de acceso de instalación predeterminada C:\Archivos de programa\IBM\Communications Server, deberá cambiar:
+<pre>PATHNAME=C:\IBMCS\apingd.exe
+por
+PATHNAME=C:\Archivos de programa\IBM\Communications Server\apingd.exe
+</PRE>
+  <p>Para ello, puede editar el origen/destinatario .acg o, desde la interfaz gráfica de usuario de configuración, seleccionar
+"CPIC y APPC -&gt; Programas de transacción."
+<p>[<A href="#5" >Volver al principio de la subsección</A>]
+[<A href="#TOP" >Volver al principio del documento</A>]
+[<A href="#ToC" >Tabla de contenido</A>]
+<p></P></DD></DL><!-- SECTION 6 ------------------------------------------------ --><a
+name=6></A>
+<hr>
+<b><font size=+2>6</FONT>
+Limitaciones</B>
+<p>
+<dl>
+  <p><!-- SECTION 6.1 ---------------------------------------------- --><a
+  name=6.1></A>
+  <dt><b><font size=+2
+  >6.1</FONT> SLP y niveles de cifrado distintos</B>
+  <dd>Una sesión cliente que acceda a un puerto TN3270 de alta seguridad con una
+consulta SLP podría conectarse a un puerto TN3270 de sólo autenticación,
+o viceversa, si ambos están configurados en el mismo servidor.
+<p>Communications Server para Windows le permite configurar varios niveles de
+cifrado (Alto, Medio, Sólo autenticación) para una definición de puerto
+TN3270(E) o TN5250. Estos niveles de cifrado se encuentran en el panel
+<b>Seguridad</B> del diálogo <b>Establecer definiciones de puerto TN3270</B>.
+<p>Algunos clientes TN3270 o TN5250 (como Host On-Demand Versión 5) no hacen
+un uso completo de la información de SSLv3 que Communications Server hace
+pública en un paquete SLP. Estos clientes se conectan al primer puerto con el nivel, ámbito,
+agrupación y carga de SSL que han solicitado, independientemente del nivel
+de cifrado. La conexión resultante podría ser una sesión que conecte con un puerto con
+un nivel de cifrado distinto al previsto.
+<p>Para evitar esta situación, utilice sólo un nivel de cifrado, (Alto,
+Medio o Sólo autenticación) para cada máquina o ámbito. Sólo se puede acceder a los puertos de un servidor habilitando e
+inhabilitando la seguridad y la autenticación del cliente.
+<p>[<A href="#6" >Volver al principio de la subsección</A>]
+[<A href="#TOP" >Volver al principio del documento</A>]
+[<A href="#ToC" >Tabla de contenido</A>]
+<p><!-- SECTION 6.2 -------------------------------------------- --><a
+  name=6.2></A></P>
+  <dt><b><font size=+2
+  >6.2</FONT> Uso del cliente API SNA</B>
+  <dd>Los Clientes API SNA SNA son adecuados para entornos bifurcados en los que el número de usuarios que se conectan
+mediante el Cliente API SNA es bajo. Si realiza una consolidación de varias bifurcaciones en un centro de datos, o si utiliza
+una aplicación de servidor web, es recomendable utilizar un servidor en lugar de un Cliente API SNA.
+<p>[<A href="#6" >Volver al principio de la subsección</A>]
+[<A href="#TOP" >Volver al principio del documento</A>]
+[<A href="#ToC" >Tabla de contenido</A>]
+<p></P></DD></DL><!-- SECTION 7 ------------------------------------------------ --><a
+name=7></A>
+<hr>
+<b><font size=+2>7</FONT> Avisos y marcas registradas</B>
+<p>
+<dl>
+  <dd>AnyNet, IBM, S/390, WebSphere y z/OS son marcas
+registradas de IBM Corporation en los Estados Unidos y/o en otros países.
+<p>Tivoli y Tivoli License Management son marcas registradas de Tivoli Systems
+Inc. o IBM Corporation en los Estados Unidos y/o en otros países.
+<p>Lotus y Domino son marcas registradas de Lotus Development Corporation
+en los Estados Unidos y/o en otros países.
+<p>Microsoft, Windows, Windows NT, Windows 2000, Windows
+  XP, Windows Server 2003, Windows Vista y Windows Server 2008 son marcas registradas de Microsoft Corporation en los Estados Unidos y/o en otros países. <p>VMware es una marca registrada de VMware, Inc.
+[<A href="#TOP" >Volver al principio </A>] [<A href="#ToC" >Tabla de contenido</A>]
+</P></DD></DL><!-- END OF DOCUMENT ------------------------------------------- -->
+<hr>
+
+<hr>
+</DD></BODY></HTML>
